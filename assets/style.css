@@ -29,15 +29,8 @@
     object-fit: cover;
 }
 
-.content-wrapper {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  padding: 20px;
-}
-
 .container-one, .container-two {
-  width: 45%;
+  width: 100%;
   padding: 20px;
   margin: 20px;
   background-color: #ccc3c3;
