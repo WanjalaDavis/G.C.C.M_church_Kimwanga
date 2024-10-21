@@ -27,17 +27,14 @@
             color: #da3939;
         }
 
-        .content-wrapper {
-            display: flex;
-            justify-content: space-between;
+ .content-wrapper {
             gap: 20px;
-            padding: 20px;
         }
 
-        .constitution-section, .newsletter-section {
+        .constitution-section {
             background-color: #977d7d;
             padding: 30px;
-            width: 48%;
+            width: 100%;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -45,7 +42,7 @@
         .newsletter-section {
           background-color: #977d7d;
             padding: 30px;
-            width: 48%;
+            width: 100%;
             height: 40%;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
