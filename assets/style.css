@@ -1,0 +1,143 @@
+/* Center the header content and apply a gradient */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to right, #ffffff, #9abfdf, #8bb1d8);
+    position: relative;
+    text-align: center;
+}
+
+.logo {
+    height: 120px;
+    float: left;
+    border-radius: 20px;
+}
+
+/* Button positioned to the right of the header */
+#colorChangeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Make sure the carousel images are equal-sized and responsive */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+.container-one, .container-two {
+  width: 45%;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ccc3c3;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-one {
+  z-index: 0; /* Bring container-one to the front */
+  margin-left: 0px; /* Slightly overlap with container-two */
+}
+
+.container-two {
+  z-index: 1;
+}
+
+.container-one:hover, .container-two:hover {
+  transform: translateY(-10px); /* Slight upward movement on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Add deeper shadow on hover */
+}
+
+/* Additional styling for best designs */
+.container-one h2, .container-two h2 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.container-one p, .container-two p {
+  font-family: 'Verdana', sans-serif;
+  color: #555;
+  line-height: 1.6;
+}
+
+.container-one ul, .container-two ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.container-one ul li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+h2 span {
+  color: #e67e22; /* Highlighting the section titles */
+  font-weight: bold;
+}
+
+
+
+footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            animation: fadeIn 1s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .social-media {
+            text-align: center;
+        }
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+        .social-media ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .social-media ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-media ul li a:hover {
+            color: #FFD700; /* Gold color on hover */
+        }
+        .footer-container ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .footer-container ul li {
+            margin: 5px 0;
+        }
+        .footer-container ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }

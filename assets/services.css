@@ -1,0 +1,200 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to right, #ffffff, #9abfdf, #8bb1d8);
+    position: relative;
+    text-align: center;
+}
+
+.logo {
+    height: 120px;
+    float: left;
+    border-radius: 20px;
+}
+
+
+   body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Smooth animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background-color: #e67e22;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p, ul {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Styling for sections */
+        .services-section, .youth-section, .community-section {
+            background-color: #d6c4c4;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .services-section:hover, .youth-section:hover, .community-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .youth-leaders, .youth-projects, .community-help {
+            margin-bottom: 40px;
+        }
+
+        .leader-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .leader-card {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            width: calc(33.33% - 20px);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .leader-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .leader-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .leader-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .leader-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .project-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .leader-card {
+                width: 100%;
+            }
+        }
+
+
+
+footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            animation: fadeIn 1s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .social-media {
+            text-align: center;
+        }
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+        .social-media ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .social-media ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-media ul li a:hover {
+            color: #FFD700; /* Gold color on hover */
+        }
+        .footer-container ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        .footer-container ul li {
+            margin: 5px 0;
+        }
+        .footer-container ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G.C.C.M CHURCH</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/project.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/G.C.C.M%20LOG.jpg" class="logo">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="head">
+            <img src="assets/images/G.C.C.M%20LOG.jpg" alt="church-logo" class="logo">
+            <h1>GOSPEL CELEBRATION CENTER MINISTRY KIMWANGA BRANCH</h1>
+            <h2 style="color: #d6afb6"><i>Where your life gets transformed</i></h2>
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Dashboard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Church Constitution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+    <h1>Church Constitution & Daily Quotes Subscription</h1>
+
+    <div class="content-wrapper">
+
+        <!-- Church Constitution Section -->
+        <div class="constitution-section">
+            <h2>Church Constitution</h2>
+            <p>We, the members of Glory of Christ Church Ministries (G.C.C.M), in the firm belief that Jesus Christ is the head of the Church, do hereby establish this Constitution to guide the governance of the Church and its mission in serving God and the community.</p>
+
+            <h3>Article I: Name and Purpose</h3>
+            <p>This church shall be known as Glory of Christ Church Ministries. The primary purpose of this Church is to glorify God through worship, teaching, discipleship, and community outreach.</p>
+
+            <h3>Article II: Statement of Faith</h3>
+            <ul>
+                <li>The inspiration of the Bible, both Old and New Testaments.</li>
+                <li>The deity of our Lord Jesus Christ, His virgin birth, His sinless life, His miracles, His atoning death, and His resurrection.</li>
+                <li>Salvation through faith in Jesus Christ alone.</li>
+                <li>The present ministry of the Holy Spirit by whose indwelling the Christian is enabled to live a godly life.</li>
+            </ul>
+
+            <h3>Article III: Membership</h3>
+            <p>Membership in this Church shall be open to any person who confesses faith in Jesus Christ, has been baptized, and agrees to adhere to the beliefs and practices of the Church.</p>
+
+            <h3>Receive the Constitution via Email</h3>
+            <form action="send_email.php" method="POST">
+                <label for="email">Enter your email to receive the church constitution as a PDF:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <input type="submit" value="Send PDF">
+            </form>
+            <div class="success-message" id="success-message"></div>
+        </div>
+
+        <!-- Newsletter Subscription Section -->
+        <div class="newsletter-section">
+            <h2>Subscribe to Daily Quotes & Verses</h2>
+            <p>Stay inspired with our daily church quotes and Bible verses. Fill out the form below to receive daily encouragement straight to your inbox!</p>
+
+            <form action="subscribe_newsletter.php" method="POST">
+                <label for="newsletter-email">Enter your email to subscribe:</label>
+                <input type="email" id="newsletter-email" name="newsletter_email" required placeholder="Enter your email">
+                <input type="submit" value="Subscribe">
+            </form>
+
+            <div class="success-message" id="newsletter-success-message"></div>
+        </div>
+
+    </div>
+
+
+    <script>
+        // Handle success messages for both forms
+        const constitutionForm = document.querySelector('.constitution-section form');
+        const newsletterForm = document.querySelector('.newsletter-section form');
+        const constitutionSuccessMessage = document.getElementById('success-message');
+        const newsletterSuccessMessage = document.getElementById('newsletter-success-message');
+
+        // Simulate success message when form is submitted
+        constitutionForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            constitutionSuccessMessage.textContent = "The constitution PDF has been sent to your email!";
+        });
+
+        newsletterForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            newsletterSuccessMessage.textContent = "You have successfully subscribed to daily quotes and verses!";
+        });
+    </script>
+
+
+<footer>
+    <div class="footer-container">
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Church Constitution</a></li>
+        </ul>
+    </div>
+    <div class="social-media">
+        <ul>
+            <li><a href="https://www.facebook.com/groups/657148442401740/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-telegram-plane"></i> Telegram</a></li>
+        </ul>
+    </div>
+    <p>@ 2024 G.C.C.M GATEWAY TO HEAVEN</p>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
